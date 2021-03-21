@@ -7,7 +7,7 @@ import ImageGallery from "../components/imageGallery/imageGallery";
 const MainRouter = () => (
   <>
     <Switch>
-      <Route exact path="/" component={message}></Route>
+      <Route exact path="/" component={ImageGallery}></Route>
       <Route exact path="/message" component={message}></Route>
       <Route exact path="/gallary" component={ImageGallery}></Route>
     </Switch>

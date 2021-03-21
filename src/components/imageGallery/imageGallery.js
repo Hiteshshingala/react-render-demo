@@ -23,9 +23,10 @@ function ImageGallery() {
         setImages(newImages);
     }
 
-    const prevStep = () => {
+    const nextStep = () => {
         history.push("/message");
     }
+
     
     return (
         <div>
@@ -40,7 +41,7 @@ function ImageGallery() {
                 )
             })}
 
-            <button onClick={() => {prevStep()}}>Previous Question  </button>
+            <button onClick={() => {nextStep()}}>Next Question</button>
 
         </div>
     )

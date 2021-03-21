@@ -8,10 +8,11 @@ const Message = () => {
         setisTextShow(true);
     }
 
-    const nextStep = () => {
+
+    const prevStep = () => {
         history.push("/gallary");
     }
-
+    
 
     return (
         <div>
@@ -21,7 +22,9 @@ const Message = () => {
             )}
 
             <br/>
-            <button onClick={() => {nextStep()}}>Next </button>
+
+            <button onClick={() => {prevStep()}}>Previous Question  </button>
+
         </div>
     )
 }
